@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i=1,j=1;
+    for(;j<14;++j)
+    {
+        int k=i-1;
+        int temp=i;
+        while(k--)
+        {
+            cout<<" ";
+        }
+        for(;i<=7;++i)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        i=(j<8?temp+1:temp-1);
+        if(i==8)
+        {
+            i=6;
+        }
+    }
+
+    return 0;
+}
